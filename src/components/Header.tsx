@@ -1,5 +1,4 @@
 import { AppBar, Toolbar, Typography, useTheme } from '@mui/material';
-import LogoImg from '../assets/luther-logo.jpg';
 
 export const Header = () => {
     const theme = useTheme();
@@ -7,11 +6,16 @@ export const Header = () => {
         <AppBar position="static" sx={{ backgroundColor: theme.palette.primary.main }}>
             <Toolbar sx={{ padding: '0 !important' }}>
                 <img 
-                    src={LogoImg} 
-                    alt="Luther Logo" 
+                    src="/assets/luther-logo.jpg"
+                    alt="Luther Logo"
                     style={{ height: 70, marginRight: 16 }} 
                 />
-                <Typography variant="h6" component="div">
+                <Typography 
+                    variant="h6" 
+                    component="div"
+                    onClick={() => window.location.href = '/'}
+                    sx={{ cursor: 'pointer'}}
+                >
                     Luther
                 </Typography>
             </Toolbar>

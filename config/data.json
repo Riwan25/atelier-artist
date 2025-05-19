@@ -1,0 +1,429 @@
+{
+    "Awards":[
+        {
+            "id": 1,
+            "name": "Disque d'Or"
+        },
+        {
+            "id": 2,
+            "name": "Disque de Platine"
+        },
+        {
+            "id": 3,
+            "name": "Disque de Diamant"
+        }
+    ],
+    "artists": [
+        {
+            "name": "Luther",
+            "description": "Luther est un rappeur français connu pour son style unique et ses paroles percutantes.",
+            "bio_image": "asset/luther-bio.jpg",
+            "icon_image": "asset/luther-logo.jpg",
+            "spotify_id": "712cOCN3mpraX2UOgUvdHW"
+        }
+    ],
+    "albums": [
+        {
+            "artist_name": "Luther",
+            "name": "Trame",
+            "description": "Premier album sorti le 22 juin 2020 alors que Luther était âgé de 16/17 ans, contenant 8 titres.",
+            "type": "Album",
+            "release_date": "2020-06-22",
+            "spotify_id": "6goTPWVUyGTAND885NiiOZ"
+        },
+        {
+            "artist_name": "Luther",
+            "name": "IDD",
+            "description": "EP sorti le 20 mars 2021, contenant 6 titres.",
+            "type": "EP",
+            "release_date": "2021-03-20",
+            "spotify_id": "0ohF3ebmOwlrlhEUDUfKzx"
+        },
+        {
+            "artist_name": "Luther",
+            "name": "Garçon",
+            "description": "Album sorti le 3 juin 2022 avec son label Sublime, certifié or en mars 2024.",
+            "type": "Album",
+            "release_date": "2022-06-03",
+            "spotify_id": "0pgPGBjDayWlzT8eAjjcKG",
+            "award_id": 1,
+            "award_number": 1
+        },
+        {
+            "artist_name": "Luther",
+            "name": "AMI",
+            "description": "Triple single sorti le 29 mars 2023, composé de trois titres. Marque son entrée dans le label Sublime du célèbre artiste Disiz.",
+            "type": "EP",
+            "release_date": "2023-03-29",
+            "spotify_id": "23TDkhQVjntUeqVZMneEd5"
+        },
+        {
+            "artist_name": "Luther",
+            "name": "Exit",
+            "description": "Album sorti le 1er mars 2024 sur le label Sublime de Disiz, explore des thèmes allant des défis personnels aux réflexions existentielles. Un jeu vidéo indépendant nommé Egress s'inspirant de la direction artistique du projet a été publié le 20 mars 2024.",
+            "type": "Album",
+            "release_date": "2024-03-01",
+            "spotify_id": "5k2kGcJwHBWckBy9aeKkGy"
+        }
+    ],
+    "tracks": [
+        {
+            "artister_name": "Luther",
+            "album_name": "Trame",
+            "name": "Maille",
+            "description": null,
+            "release_date": "2020-06-22",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "0cyujFmSGgYOzitZka9SIX"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Trame",
+            "name": "Hégémon",
+            "description": null,
+            "release_date": "2020-06-22",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "3s3yBLHecYiRjcoYWSsQpF"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Trame",
+            "name": "Dinar",
+            "description": null,
+            "release_date": "2020-06-22",
+            "feat": ["Bu$hi"],
+            "duration": null,
+            "spotify_id": "072YxXjlCC07vJJRYsZnv8"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Trame",
+            "name": "Le faire",
+            "description": null,
+            "release_date": "2020-06-22",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "60RPo4kPndf71PbsN9j4Jc"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Trame",
+            "name": "Savane",
+            "description": null,
+            "release_date": "2020-06-22",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "6f2AaCWRNZwTsV6ruoy6FH"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Trame",
+            "name": "VVS",
+            "description": null,
+            "release_date": "2020-06-22",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "4WCgX7CXrUp9VjjVQXkxZR"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Trame",
+            "name": "Kamado",
+            "description": null,
+            "release_date": "2020-06-22",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "3YTiyaUlDHWFXDQPolcSUa"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Trame",
+            "name": "Trame",
+            "description": null,
+            "release_date": "2020-06-22",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "1STTWUeJlfseNqP5etOv5X"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "IDD",
+            "name": "Intro",
+            "description": null,
+            "release_date": "2021-03-20",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "0iBivqtT4vcn6scocYuq3X"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "IDD",
+            "name": "Yuto & Yugi",
+            "description": null,
+            "release_date": "2021-03-20",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "te6Lc8ZD0iS4ufVG1b"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "IDD",
+            "name": "20 Mach/s (interlude)",
+            "description": null,
+            "release_date": "2021-03-20",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "32lffyUnAXcnF7Ku9DmY8J"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "IDD",
+            "name": "Finesse",
+            "description": null,
+            "release_date": "2021-03-20",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "36vysI0V8fcjJTZ0mU95lH"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "IDD",
+            "name": "Beaume à lèvres",
+            "description": null,
+            "release_date": "2021-03-20",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "0FI8BDPeqA9ykp9VUxnA5E"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "IDD",
+            "name": "Chrysant3mes",
+            "description": null,
+            "release_date": "2021-03-20",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "0sC2VnAdZsCWd4qVTw7CvB"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Garçon",
+            "name": "Pk tu m'apl ?",
+            "description": null,
+            "release_date": "2022-06-03",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "3Jiucs35DjZQg6c5ZuFnYy"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Garçon",
+            "name": "Alakazam",
+            "description": null,
+            "release_date": "2022-06-03",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "3bvAmJOfhcfoAsUYFcqe2c",
+            "award_id": 1,
+            "award_number": 1
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Garçon",
+            "name": "Blake & Mortimer",
+            "description": null,
+            "release_date": "2022-06-03",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "2ockgk7zENjkCbrNlZ5H4K",
+            "award_id": 1,
+            "award_number": 1
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Garçon",
+            "name": "Ma vie d'avant",
+            "description": null,
+            "release_date": "2022-06-03",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "46Prt8cubCmoavHaFXBBix"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Garçon",
+            "name": "Lessgui",
+            "description": null,
+            "release_date": "2022-06-03",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "2as3ywrcdGXSHtsyttwYGP",
+            "award_id": 1,
+            "award_number": 1
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Garçon",
+            "name": "Le sang",
+            "description": null,
+            "release_date": "2022-06-03",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "6t7gRJZjDjRY81MLBihbmh"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Garçon",
+            "name": "Toriel - Veni Vidi Vide",
+            "description": null,
+            "release_date": "2022-06-03",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "2EriWBuBVODGuSF5PMO29I"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Garçon",
+            "name": "Garçon",
+            "description": null,
+            "release_date": "2022-06-03",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "7wZnwgGkwpJ8EYJ6VEJD2A",
+            "award_id": 1,
+            "award_number": 1
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "AMI",
+            "name": "inaudible",
+            "description": null,
+            "release_date": "2023-03-29",
+            "feat": ["LUCASV"],
+            "duration": null,
+            "spotify_id": "4iirHIx9MvI1lcmOOrNUul"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "AMI",
+            "name": "uet",
+            "description": null,
+            "release_date": "2023-03-29",
+            "feat": ["amne"],
+            "duration": null,
+            "spotify_id": "3AZSQW7qMPSVSftcCMS9i0"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "AMI",
+            "name": "virage",
+            "description": null,
+            "release_date": "2023-03-29",
+            "feat": ["amne"],
+            "duration": null,
+            "spotify_id": "2mpQPyXSd28s0IpkjiyyGo"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Exit",
+            "name": "Pabo",
+            "description": null,
+            "release_date": "2024-03-01",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "5E2lhD5jMC6Ex8ijOgPNKv"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Exit",
+            "name": "Rouge Goron",
+            "description": null,
+            "release_date": "2024-03-01",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "7vVBDoYopS0eP8qX2f1F5m"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Exit",
+            "name": "Mossy Cobblestone",
+            "description": null,
+            "release_date": "2024-03-01",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "0rozL9CtHjmm1QlF3Qr89S"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Exit",
+            "name": "T3",
+            "description": null,
+            "release_date": "2024-03-01",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "5OysBDhR9Da8Aw1WvzAzUc"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Exit",
+            "name": "Journal des quêtes",
+            "description": null,
+            "release_date": "2024-03-01",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "4OloGXT3NSK1zaLX8FHYkK"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Exit",
+            "name": "Seuil",
+            "description": null,
+            "release_date": "2024-03-01",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "2ilcUmYn0pMNlfx3aCljQo"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Exit",
+            "name": "uSquad",
+            "description": null,
+            "release_date": "2024-03-01",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "1Jf70cWtoyZxOJnotryPod"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Exit",
+            "name": "Château Fort",
+            "description": null,
+            "release_date": "2024-03-01",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "4Iqh8atfjuYXTN5NckhNIg"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Exit",
+            "name": "Look",
+            "description": null,
+            "release_date": "2024-03-01",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "0YqeY9I9AeHfrqUekhrgUw"
+        },
+        {
+            "artister_name": "Luther",
+            "album_name": "Exit",
+            "name": "Aled",
+            "description": null,
+            "release_date": "2024-03-01",
+            "feat": [],
+            "duration": null,
+            "spotify_id": "41hl3QWKVaFZMZTNZhrARK"
+        }
+    ]
+}
