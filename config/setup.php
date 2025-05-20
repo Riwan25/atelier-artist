@@ -11,8 +11,7 @@ try {
     
     // Switch to the database
     $conn->exec("USE `".DB_NAME."`");
-    
-    // Create users table
+      // Create users table
     $conn->exec("CREATE TABLE IF NOT EXISTS `users` (
         `id` int(11) NOT NULL AUTO_INCREMENT,
         `email` varchar(100) NOT NULL UNIQUE,
@@ -59,8 +58,7 @@ try {
         PRIMARY KEY (`id`),
         FOREIGN KEY (`artist_id`) REFERENCES `artists`(`id`) ON DELETE CASCADE,
         FOREIGN KEY (`award_id`) REFERENCES `awards`(`id`) ON DELETE SET NULL
-    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci");
-      // Create tracks table
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci");    // Create tracks table
     $conn->exec("CREATE TABLE IF NOT EXISTS `tracks` (
         `id` int(11) NOT NULL AUTO_INCREMENT,
         `artist_id` int(11) NOT NULL,
@@ -79,6 +77,29 @@ try {
         FOREIGN KEY (`artist_id`) REFERENCES `artists`(`id`) ON DELETE CASCADE,
         FOREIGN KEY (`album_id`) REFERENCES `albums`(`id`) ON DELETE SET NULL,
         FOREIGN KEY (`award_id`) REFERENCES `awards`(`id`) ON DELETE SET NULL
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci");
+    
+    // Create orders table
+    $conn->exec("CREATE TABLE IF NOT EXISTS `orders` (
+        `id` int(11) NOT NULL AUTO_INCREMENT,
+        `user_id` int(11) NOT NULL,
+        `total_amount` decimal(10,2) NOT NULL DEFAULT 0.00,
+        `status` enum('pending','completed','cancelled') NOT NULL DEFAULT 'pending',
+        `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        PRIMARY KEY (`id`),
+        FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE CASCADE
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci");
+    
+    // Create order items table
+    $conn->exec("CREATE TABLE IF NOT EXISTS `order_items` (
+        `id` int(11) NOT NULL AUTO_INCREMENT,
+        `order_id` int(11) NOT NULL,
+        `album_id` int(11) NOT NULL,
+        `quantity` int(11) NOT NULL DEFAULT 1,
+        `unit_price` decimal(10,2) NOT NULL DEFAULT 0.00,
+        PRIMARY KEY (`id`),
+        FOREIGN KEY (`order_id`) REFERENCES `orders`(`id`) ON DELETE CASCADE,
+        FOREIGN KEY (`album_id`) REFERENCES `albums`(`id`) ON DELETE CASCADE
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci");
     
     echo "Setup completed successfully!";

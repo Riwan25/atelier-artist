@@ -1,16 +1,18 @@
-import { faScrewdriverWrench, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     AppBar,
     Box,
     Button,
     Container,
+    IconButton,
     Toolbar,
     Typography,
     useTheme,
 } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import { CartDropdown } from './CartDropdown';
 import { LogoutButton } from './LogoutButton';
 
 export const Header = () => {
@@ -21,16 +23,16 @@ export const Header = () => {
     return (
         <AppBar
             position="static"
-            sx={{ 
-                backgroundColor: theme.palette.primary.main
+            sx={{
+                backgroundColor: theme.palette.primary.main,
             }}
         >
             <Container maxWidth="xl" sx={{ paddingLeft: '0 !important' }}>
                 <Toolbar sx={{ padding: '0 !important' }}>
-                    <img 
+                    <img
                         src="/assets/luther-logo.jpg"
                         alt="Luther Logo"
-                        style={{ height: 70, marginRight: 16 }} 
+                        style={{ height: 70, marginRight: 16 }}
                     />
                     <Typography
                         variant="h6"
@@ -48,7 +50,7 @@ export const Header = () => {
                         {isAuthenticated ? (
                             <>
                                 {isAdmin && (
-                                    <Button
+                                    <IconButton
                                         color="inherit"
                                         component={RouterLink}
                                         to="/admin"
@@ -57,17 +59,10 @@ export const Header = () => {
                                     >
                                         <FontAwesomeIcon
                                             icon={faScrewdriverWrench}
-                                            size="xl"
                                         />
-                                    </Button>
-                                )}
-                                <Button
-                                    color="inherit"
-                                    component={RouterLink}
-                                    to="/profile"
-                                >
-                                    <FontAwesomeIcon icon={faUser} size="xl" />
-                                </Button>
+                                    </IconButton>
+                                )}{' '}
+                                <CartDropdown />
                                 <LogoutButton />
                             </>
                         ) : (
