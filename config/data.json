@@ -1,5 +1,5 @@
 {
-    "Awards":[
+    "Awards": [
         {
             "id": 1,
             "name": "Disque d'Or"
@@ -16,7 +16,7 @@
     "artists": [
         {
             "name": "Luther",
-            "description": "Luther est un rappeur français connu pour son style unique et ses paroles percutantes.",
+            "description": "Luther est un rappeur et compositeur français, connu pour ses paroles introspectives et son style unique. Il a commencé sa carrière musicale en 2015 et a depuis sorti plusieurs albums acclamés par la critique.",
             "bio_image": "asset/luther-bio.jpg",
             "icon_image": "asset/luther-logo.jpg",
             "spotify_id": "712cOCN3mpraX2UOgUvdHW"
@@ -74,7 +74,6 @@
             "description": null,
             "release_date": "2020-06-22",
             "feat": [],
-            "duration": null,
             "spotify_id": "0cyujFmSGgYOzitZka9SIX"
         },
         {
@@ -84,7 +83,6 @@
             "description": null,
             "release_date": "2020-06-22",
             "feat": [],
-            "duration": null,
             "spotify_id": "3s3yBLHecYiRjcoYWSsQpF"
         },
         {
@@ -94,7 +92,6 @@
             "description": null,
             "release_date": "2020-06-22",
             "feat": ["Bu$hi"],
-            "duration": null,
             "spotify_id": "072YxXjlCC07vJJRYsZnv8"
         },
         {
@@ -104,7 +101,6 @@
             "description": null,
             "release_date": "2020-06-22",
             "feat": [],
-            "duration": null,
             "spotify_id": "60RPo4kPndf71PbsN9j4Jc"
         },
         {
@@ -114,7 +110,6 @@
             "description": null,
             "release_date": "2020-06-22",
             "feat": [],
-            "duration": null,
             "spotify_id": "6f2AaCWRNZwTsV6ruoy6FH"
         },
         {
@@ -124,7 +119,6 @@
             "description": null,
             "release_date": "2020-06-22",
             "feat": [],
-            "duration": null,
             "spotify_id": "4WCgX7CXrUp9VjjVQXkxZR"
         },
         {
@@ -134,7 +128,6 @@
             "description": null,
             "release_date": "2020-06-22",
             "feat": [],
-            "duration": null,
             "spotify_id": "3YTiyaUlDHWFXDQPolcSUa"
         },
         {
@@ -144,7 +137,6 @@
             "description": null,
             "release_date": "2020-06-22",
             "feat": [],
-            "duration": null,
             "spotify_id": "1STTWUeJlfseNqP5etOv5X"
         },
         {
@@ -154,7 +146,6 @@
             "description": null,
             "release_date": "2021-03-20",
             "feat": [],
-            "duration": null,
             "spotify_id": "0iBivqtT4vcn6scocYuq3X"
         },
         {
@@ -164,7 +155,6 @@
             "description": null,
             "release_date": "2021-03-20",
             "feat": [],
-            "duration": null,
             "spotify_id": "te6Lc8ZD0iS4ufVG1b"
         },
         {
@@ -174,7 +164,6 @@
             "description": null,
             "release_date": "2021-03-20",
             "feat": [],
-            "duration": null,
             "spotify_id": "32lffyUnAXcnF7Ku9DmY8J"
         },
         {
@@ -184,7 +173,6 @@
             "description": null,
             "release_date": "2021-03-20",
             "feat": [],
-            "duration": null,
             "spotify_id": "36vysI0V8fcjJTZ0mU95lH"
         },
         {
@@ -194,7 +182,6 @@
             "description": null,
             "release_date": "2021-03-20",
             "feat": [],
-            "duration": null,
             "spotify_id": "0FI8BDPeqA9ykp9VUxnA5E"
         },
         {
@@ -204,7 +191,6 @@
             "description": null,
             "release_date": "2021-03-20",
             "feat": [],
-            "duration": null,
             "spotify_id": "0sC2VnAdZsCWd4qVTw7CvB"
         },
         {
@@ -214,7 +200,6 @@
             "description": null,
             "release_date": "2022-06-03",
             "feat": [],
-            "duration": null,
             "spotify_id": "3Jiucs35DjZQg6c5ZuFnYy"
         },
         {
@@ -224,7 +209,6 @@
             "description": null,
             "release_date": "2022-06-03",
             "feat": [],
-            "duration": null,
             "spotify_id": "3bvAmJOfhcfoAsUYFcqe2c",
             "award_id": 1,
             "award_number": 1
@@ -236,7 +220,6 @@
             "description": null,
             "release_date": "2022-06-03",
             "feat": [],
-            "duration": null,
             "spotify_id": "2ockgk7zENjkCbrNlZ5H4K",
             "award_id": 1,
             "award_number": 1
@@ -248,7 +231,6 @@
             "description": null,
             "release_date": "2022-06-03",
             "feat": [],
-            "duration": null,
             "spotify_id": "46Prt8cubCmoavHaFXBBix"
         },
         {
@@ -258,7 +240,6 @@
             "description": null,
             "release_date": "2022-06-03",
             "feat": [],
-            "duration": null,
             "spotify_id": "2as3ywrcdGXSHtsyttwYGP",
             "award_id": 1,
             "award_number": 1
@@ -270,7 +251,6 @@
             "description": null,
             "release_date": "2022-06-03",
             "feat": [],
-            "duration": null,
             "spotify_id": "6t7gRJZjDjRY81MLBihbmh"
         },
         {
@@ -280,7 +260,6 @@
             "description": null,
             "release_date": "2022-06-03",
             "feat": [],
-            "duration": null,
             "spotify_id": "2EriWBuBVODGuSF5PMO29I"
         },
         {
@@ -290,7 +269,6 @@
             "description": null,
             "release_date": "2022-06-03",
             "feat": [],
-            "duration": null,
             "spotify_id": "7wZnwgGkwpJ8EYJ6VEJD2A",
             "award_id": 1,
             "award_number": 1
@@ -302,7 +280,6 @@
             "description": null,
             "release_date": "2023-03-29",
             "feat": ["LUCASV"],
-            "duration": null,
             "spotify_id": "4iirHIx9MvI1lcmOOrNUul"
         },
         {
@@ -312,7 +289,6 @@
             "description": null,
             "release_date": "2023-03-29",
             "feat": ["amne"],
-            "duration": null,
             "spotify_id": "3AZSQW7qMPSVSftcCMS9i0"
         },
         {
@@ -322,7 +298,6 @@
             "description": null,
             "release_date": "2023-03-29",
             "feat": ["amne"],
-            "duration": null,
             "spotify_id": "2mpQPyXSd28s0IpkjiyyGo"
         },
         {
@@ -332,7 +307,6 @@
             "description": null,
             "release_date": "2024-03-01",
             "feat": [],
-            "duration": null,
             "spotify_id": "5E2lhD5jMC6Ex8ijOgPNKv"
         },
         {
@@ -342,7 +316,6 @@
             "description": null,
             "release_date": "2024-03-01",
             "feat": [],
-            "duration": null,
             "spotify_id": "7vVBDoYopS0eP8qX2f1F5m"
         },
         {
@@ -352,7 +325,6 @@
             "description": null,
             "release_date": "2024-03-01",
             "feat": [],
-            "duration": null,
             "spotify_id": "0rozL9CtHjmm1QlF3Qr89S"
         },
         {
@@ -362,7 +334,6 @@
             "description": null,
             "release_date": "2024-03-01",
             "feat": [],
-            "duration": null,
             "spotify_id": "5OysBDhR9Da8Aw1WvzAzUc"
         },
         {
@@ -372,7 +343,6 @@
             "description": null,
             "release_date": "2024-03-01",
             "feat": [],
-            "duration": null,
             "spotify_id": "4OloGXT3NSK1zaLX8FHYkK"
         },
         {
@@ -382,7 +352,6 @@
             "description": null,
             "release_date": "2024-03-01",
             "feat": [],
-            "duration": null,
             "spotify_id": "2ilcUmYn0pMNlfx3aCljQo"
         },
         {
@@ -392,7 +361,6 @@
             "description": null,
             "release_date": "2024-03-01",
             "feat": [],
-            "duration": null,
             "spotify_id": "1Jf70cWtoyZxOJnotryPod"
         },
         {
@@ -402,7 +370,6 @@
             "description": null,
             "release_date": "2024-03-01",
             "feat": [],
-            "duration": null,
             "spotify_id": "4Iqh8atfjuYXTN5NckhNIg"
         },
         {
@@ -412,7 +379,6 @@
             "description": null,
             "release_date": "2024-03-01",
             "feat": [],
-            "duration": null,
             "spotify_id": "0YqeY9I9AeHfrqUekhrgUw"
         },
         {
@@ -422,7 +388,6 @@
             "description": null,
             "release_date": "2024-03-01",
             "feat": [],
-            "duration": null,
             "spotify_id": "41hl3QWKVaFZMZTNZhrARK"
         }
     ]

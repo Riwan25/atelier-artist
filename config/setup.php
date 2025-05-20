@@ -15,10 +15,9 @@ try {
     // Create users table
     $conn->exec("CREATE TABLE IF NOT EXISTS `users` (
         `id` int(11) NOT NULL AUTO_INCREMENT,
-        `username` varchar(50) NOT NULL,
         `email` varchar(100) NOT NULL UNIQUE,
         `password` varchar(255) NOT NULL,
-        `role` enum('user','author','admin') NOT NULL DEFAULT 'user',
+        `role` enum('user','admin') NOT NULL DEFAULT 'user',
         `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
         PRIMARY KEY (`id`)
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci");
@@ -55,6 +54,8 @@ try {
         `award_id` int(11),
         `award_number` int(11),
         `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        `isSelling` tinyint(1) NOT NULL DEFAULT 0,
+        `cost` decimal(10,2) NOT NULL DEFAULT 0.00,
         PRIMARY KEY (`id`),
         FOREIGN KEY (`artist_id`) REFERENCES `artists`(`id`) ON DELETE CASCADE,
         FOREIGN KEY (`award_id`) REFERENCES `awards`(`id`) ON DELETE SET NULL
@@ -70,7 +71,6 @@ try {
         `description` text,
         `release_date` date,
         `feat` text,
-        `duration` int(11),
         `spotify_id` varchar(100),
         `award_id` int(11),
         `award_number` int(11),
@@ -178,8 +178,8 @@ if (file_exists($dataFilePath)) {
                                             // Convert feat array to JSON string
                                             $featJson = !empty($track['feat']) ? json_encode($track['feat']) : null;
                                               // Insert new track
-                                            $stmt = $conn->prepare("INSERT INTO tracks (artist_id, artister_name, album_id, album_name, name, description, release_date, feat, duration, spotify_id, award_id, award_number) 
-                                                              VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                                            $stmt = $conn->prepare("INSERT INTO tracks (artist_id, artister_name, album_id, album_name, name, description, release_date, feat, spotify_id, award_id, award_number) 
+                                                              VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
                                             $stmt->execute([
                                                 $artistId,
                                                 $track['artister_name'],
@@ -189,7 +189,6 @@ if (file_exists($dataFilePath)) {
                                                 $track['description'] ?? null,
                                                 $track['release_date'] ?? null,
                                                 $featJson,
-                                                $track['duration'],
                                                 $track['spotify_id'] ?? null,
                                                 $track['award_id'] ?? null,
                                                 $track['award_number'] ?? null

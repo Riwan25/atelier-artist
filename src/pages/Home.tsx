@@ -8,13 +8,12 @@ import {
 } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { Carousel } from '../components/Carousel';
-import { artistData } from '../data/mockData';
-import { Album } from '../types';
+import { Artist } from '../types';
 
 export const Home = () => {
-    const [albums, setAlbums] = useState<Album[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
+    const [artist, setArtist] = useState<Artist | null>(null);
 
     // Fetch albums from API
     useEffect(() => {
@@ -27,8 +26,7 @@ export const Home = () => {
                     throw new Error('Failed to fetch albums');
                 }
                 const data = await response.json();
-                console.log(data);
-                setAlbums(data.albums || []);
+                setArtist(data || null);
                 setLoading(false);
             } catch (err) {
                 console.error('Error fetching albums:', err);
@@ -43,7 +41,7 @@ export const Home = () => {
 
         fetchAlbums();
     }, []);
-
+    console.log(artist);
     return (
         <Container sx={{ py: 4 }}>
             {/* Artist Introduction Section */}
@@ -53,7 +51,7 @@ export const Home = () => {
                         <CardMedia
                             component="img"
                             src={'/assets/luther-bio.jpg'}
-                            alt={artistData.name}
+                            alt={artist?.name}
                             sx={{
                                 height: 300,
                                 borderRadius: 2,
@@ -63,10 +61,10 @@ export const Home = () => {
                     </Box>
                     <Box sx={{ width: { xs: '100%', md: '70%' } }}>
                         <Typography variant="h2" component="h1" gutterBottom>
-                            {artistData.name}
+                            {artist?.name}
                         </Typography>
                         <Typography variant="body1">
-                            {artistData.biography}
+                            {artist?.description}
                         </Typography>
                     </Box>
                 </Stack>
@@ -82,9 +80,9 @@ export const Home = () => {
                     <Typography>Loading albums...</Typography>
                 ) : error ? (
                     <Typography color="error">{error}</Typography>
-                ) : albums.length > 0 ? (
+                ) : artist && artist.albums && artist.albums.length > 0 ? (
                     <Box>
-                        <Carousel albums={albums} />
+                        <Carousel albums={artist.albums} />
                     </Box>
                 ) : (
                     <Typography>Aucun album trouvé</Typography>

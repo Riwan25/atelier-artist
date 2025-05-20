@@ -11,7 +11,7 @@ import 'slick-carousel/slick/slick.css';
 import { Album } from '../types';
 
 interface CarouselProps {
-    albums: Album[];
+    albums: Album[] | undefined;
 }
 
 function SampleNextArrow(props: any) {
@@ -113,7 +113,7 @@ export const Carousel = ({ albums }: CarouselProps) => {
     };
     return (
         <Slider {...settings}>
-            {albums.map((album) => (
+            {albums?.map((album) => (
                 <Box key={album.id} sx={{ height: '100%' }}>
                     <CarouselItem album={album} />
                 </Box>

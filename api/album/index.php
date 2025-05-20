@@ -1,11 +1,14 @@
 <?php
 // API endpoint to get all albums by an artist
 require_once '../../config/config.php';
+// Include CORS helper
+require_once '../helpers/cors_helper.php';
 
-// Set headers for JSON response
+// Set CORS headers and handle preflight requests
+handleCorsPreflightRequest();
+
+// Set response content type
 header('Content-Type: application/json');
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: GET');
 
 // Handle only GET requests
 if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
@@ -64,6 +67,19 @@ try {
         echo json_encode(['album' => $album]);
         exit;
     } else if ($artistName) {        // Query to get all albums for a specific artist
+        // First get artist info
+        $artistStmt = $conn->prepare("
+            SELECT * FROM artists WHERE name = ?
+        ");
+        $artistStmt->execute([$artistName]);
+        $artist = $artistStmt->fetch(PDO::FETCH_ASSOC);
+        
+        if (!$artist) {
+            http_response_code(404);
+            echo json_encode(['error' => 'Artist not found']);
+            exit;
+        }
+        
         $stmt = $conn->prepare("
             SELECT a.*, art.name as artist_name, art.id as artist_id
             FROM albums a
@@ -104,7 +120,9 @@ try {
             http_response_code(404);
             echo json_encode(['error' => 'No albums found for this artist']);
         } else {
-            echo json_encode(['albums' => $albums]);
+            // Add albums to the artist object
+            $artist['albums'] = $albums;
+            echo json_encode($artist);
         }
     } else {        // No artist specified, return all albums grouped by artist
         $stmt = $conn->prepare("

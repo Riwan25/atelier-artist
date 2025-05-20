@@ -92,7 +92,7 @@ export const Awards = ({ elem, size }: AwardsProps) => {
                                                     icon={faCompactDisc}
                                                     style={{
                                                         marginLeft: '8px',
-                                                        color: '#CD7F32',
+                                                        color: 'lightblue',
                                                     }}
                                                     size={size}
                                                 />
@@ -103,7 +103,7 @@ export const Awards = ({ elem, size }: AwardsProps) => {
                                             icon={faCompactDisc}
                                             style={{
                                                 marginLeft: '8px',
-                                                color: '#CD7F32',
+                                                color: 'lightblue',
                                             }}
                                             size={size}
                                         />

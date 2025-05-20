@@ -19,7 +19,9 @@ export const AlbumSchema = z.object({
     releaseDate: z.string().min(1, "Release date is required"),
     coverImageUrl: z.string().url("Must be a valid URL").optional(),
     coverImagePath: z.string().optional(),
-    description: z.string().min(10, "Description must be at least 10 characters")
+    description: z.string().min(10, "Description must be at least 10 characters"),
+    isSelling: z.boolean().optional(),
+    cost: z.number().min(0, "Cost must be a positive number").optional()    
 });
 
 export type Artist = z.infer<typeof ArtistSchema>;
