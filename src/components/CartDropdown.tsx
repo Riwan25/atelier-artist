@@ -41,7 +41,7 @@ export const CartDropdown: React.FC = () => {
     const { user } = useAuth();
     const { clearCart } = useCart();
 
-    const handleCheckout = async () => {
+    const handleCheckout = async () => { //todo checkout function
         try {
             if (!user) {
                 alert('Please log in to checkout');
@@ -50,11 +50,12 @@ export const CartDropdown: React.FC = () => {
 
             // Prepare order data
             const orderData = {
-                user_id: user.id,
                 items: cart,
                 total_amount: getTotal(),
             };
 
+            // Get the auth token from localStorage
+            const authToken = localStorage.getItem('auth_token');
             // Call the API to create an order
             const response = await fetch(
                 'http://localhost/atelier/atelier-artist/api/order/create.php',
@@ -62,6 +63,7 @@ export const CartDropdown: React.FC = () => {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${authToken}`
                     },
                     body: JSON.stringify(orderData),
                 }
@@ -71,7 +73,7 @@ export const CartDropdown: React.FC = () => {
 
             if (response.ok) {
                 // Show success message and clear the cart
-                alert(`Order created successfully! Order ID: ${data.order_id}`);
+                alert(`Order created successfully!`);
                 clearCart();
             } else {
                 alert(`Checkout failed: ${data.message}`);

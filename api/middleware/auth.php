@@ -85,6 +85,12 @@ function getJWTPayload() {
 // Function to get current user data
 function getCurrentUser($db) {
     $userId = getCurrentUserId();
+    // Log user data for debugging
+    $logFile = '../../logs/order_log.txt';
+    $timestamp = date('Y-m-d H:i:s');
+    $logData = $timestamp . " - User ID: " . ($userId ? $userId : 'no user id') . 
+            " - IP: " . $_SERVER['REMOTE_ADDR'] . "\n";
+    file_put_contents($logFile, $logData, FILE_APPEND);
     if (!$userId) {
         return null;
     }

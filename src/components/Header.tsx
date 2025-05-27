@@ -1,4 +1,7 @@
-import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
+import {
+    faBagShopping,
+    faScrewdriverWrench,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     AppBar,
@@ -50,17 +53,30 @@ export const Header = () => {
                         {isAuthenticated ? (
                             <>
                                 {isAdmin && (
-                                    <IconButton
-                                        color="inherit"
-                                        component={RouterLink}
-                                        to="/admin"
-                                        sx={{ mr: 1 }}
-                                        title="Admin Dashboard"
-                                    >
-                                        <FontAwesomeIcon
-                                            icon={faScrewdriverWrench}
-                                        />
-                                    </IconButton>
+                                    <>
+                                        <IconButton
+                                            color="inherit"
+                                            component={RouterLink}
+                                            to="/admin"
+                                            sx={{ mr: 1 }}
+                                            title="Admin Dashboard"
+                                        >
+                                            <FontAwesomeIcon
+                                                icon={faScrewdriverWrench}
+                                            />
+                                        </IconButton>
+                                        <IconButton
+                                            color="inherit"
+                                            component={RouterLink}
+                                            to="/admin/orders"
+                                            sx={{ mr: 1 }}
+                                            title="Order Management"
+                                        >
+                                            <FontAwesomeIcon
+                                                icon={faBagShopping}
+                                            />
+                                        </IconButton>
+                                    </>
                                 )}{' '}
                                 <CartDropdown />
                                 <LogoutButton />
